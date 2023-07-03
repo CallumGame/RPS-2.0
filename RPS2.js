@@ -46,10 +46,23 @@ else if (playerSelection === "scissors" && computerSelection === "rock"){
 
 }
 
+rockButton.addEventListener('click', () => {
+const computerSelection = getComputerChoice();
+const playerSelection = "rock"
+playRound(playerSelection, computerSelection)
+})
 
+paperButton.addEventListener('click', () => {
+    const computerSelection = getComputerChoice();
+    const playerSelection = "paper"
+    playRound(playerSelection, computerSelection)
+    })
 
-const button = document.querySelector('button');
-
+scissorButton.addEventListener('click', () => {
+const computerSelection = getComputerChoice();
+const playerSelection = "scissor" 
+playRound(playerSelection, computerSelection)
+})
 
 
 
