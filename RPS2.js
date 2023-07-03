@@ -2,10 +2,10 @@ let playerScore = 0;
 let computerScore = 0;
 
 
-const rockButton = document.querySelector(".rock")
-const scissorButton = document.querySelector(".scissor")
-const paperButton = document.querySelector(".paper")
-const result = document.querySelector(".result")
+const rockButton = document.querySelector('.rock')
+const scissorButton = document.querySelector('.scissor')
+const paperButton = document.querySelector('.paper')
+const result = document.querySelector('.result')
 
 const getComputerChoice = () => {
 
