@@ -17,31 +17,42 @@ return choices
 
 const playRound = (playerSelection, computerSelection) =>{
     if (playerSelection ===  computerSelection ){
-        return `You draw! You both picked ${playerSelection} , play again`
+        const p = document.createElement('p')
+       p.innerText = `You draw! You both picked ${playerSelection} , play again`
     } 
 else if (playerSelection === "rock" && computerSelection === "scissors"){
+    const p = document.createElement('p')
+    p.innerText = "You win! The computer picked Scissors"
     playerScore++
-    return "You win! The computer picked Scissors"
 }
 else if (playerSelection === "paper" && computerSelection === "rock"){
+    const p = document.createElement('p')
+    p.innerText = "You win! The computer picked Rock"
     playerScore++
-    return "You win! The computer picked Rock"
 }
 else if (playerSelection === "scissors" && computerSelection === "paper"){
+    const p = document.createElement('p')
+    p.innerText = "You win! The computer picked Paper"
     playerScore++
-    return "You win! The computer picked Paper"
+
 }
 else if (playerSelection === "rock" && computerSelection === "paper"){
+    const p = document.createElement('p')
+    p.innerText = "You lose! The computer picked Paper"
     computerScore++
-    return "You lose! The computer picked Paper"
+
 }
 else if (playerSelection === "paper" && computerSelection === "scissors"){
+    const p = document.createElement('p')
+    p.innerText = "You lose! The computer picked Scissors"
     computerScore++
-    return "You lose! The computer picked Scissors"
+
 }
 else if (playerSelection === "scissors" && computerSelection === "rock"){
+    const p = document.createElement('p')
+    p.innerText =  "You lose! The computer picked Rock"
     computerScore++
-    return "You lose! The computer picked Rock"
+
 }
 
 }
