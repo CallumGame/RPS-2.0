@@ -50,13 +50,13 @@ const button = document.querySelector('button');
 
 
 const game = () => {
-for (let i = 0; i < 5; i++) {
+
 const playerSelection = prompt('choose rock paper or scissors', "I'm going to win").toLowerCase();
 const computerSelection = getComputerChoice();
 console.log(playerScore)
 console.log(computerScore)
 console.log(playRound(playerSelection, computerSelection))
-}
+
 if (playerScore > computerScore){
     console.log("Congratulations you won, Nothing")
 }
