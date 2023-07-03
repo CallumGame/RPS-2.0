@@ -2,6 +2,10 @@ let playerScore = 0;
 let computerScore = 0;
 
 
+const rockButton = document.querySelector(".rock")
+const scissorButton = document.querySelector(".scissor")
+const paperButton = document.querySelector(".paper")
+const result = document.querySelector(".result")
 
 const getComputerChoice = () => {
 
@@ -51,10 +55,10 @@ const button = document.querySelector('button');
 
 const game = () => {
 
-const playerSelection = prompt('choose rock paper or scissors', "I'm going to win").toLowerCase();
+
 const computerSelection = getComputerChoice();
-console.log(playerScore)
-console.log(computerScore)
+//console.log(playerScore)
+//console.log(computerScore)
 console.log(playRound(playerSelection, computerSelection))
 
 if (playerScore > computerScore){
@@ -67,7 +71,7 @@ else if (playerScore < computerScore){
 else if (playerScore === computerScore ){
     console.log("You draw, Play me again")
 }
-console.log(playerScore, computerScore);
+//console.log(playerScore, computerScore);
 
 
 }
