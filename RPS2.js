@@ -64,10 +64,10 @@ playRound(playerSelection, computerSelection)
 })
 
 paperButton.addEventListener('click', () => {
-    const computerSelection = getComputerChoice();
-    const playerSelection = "paper"
-    playRound(playerSelection, computerSelection)
-    })
+const computerSelection = getComputerChoice();
+const playerSelection = "paper"
+playRound(playerSelection, computerSelection)
+})
 
 scissorButton.addEventListener('click', () => {
 const computerSelection = getComputerChoice();
@@ -99,8 +99,3 @@ else if (playerScore === computerScore ){
 
 
 }
-
-
-
-
-
