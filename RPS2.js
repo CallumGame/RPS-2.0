@@ -76,7 +76,7 @@ playRound(playerSelection, computerSelection)
 })
 
 
-
+/*
 const game = () => {
 
 
@@ -99,3 +99,4 @@ else if (playerScore === computerScore ){
 
 
 }
+*/
