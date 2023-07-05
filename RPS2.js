@@ -2,10 +2,10 @@ let playerScore = 0;
 let computerScore = 0;
 
 
-const rockButton = document.querySelector('.rock')
-const scissorButton = document.querySelector('.scissor')
-const paperButton = document.querySelector('.paper')
-const result = document.querySelector('.result')
+const rockButton = document.querySelector('#rock')
+const scissorButton = document.querySelector('#scissor')
+const paperButton = document.querySelector('#paper')
+const result = document.querySelector('#result')
 
 const getComputerChoice = () => {
 
@@ -16,6 +16,8 @@ return choices
 
 
 const playRound = (playerSelection, computerSelection) =>{
+
+    console.log('1 ', playerSelection, '2 ', computerSelection)
     if (playerSelection ===  computerSelection ){
         const p = document.createElement('p')
        p.innerText = `You draw! You both picked ${playerSelection} , play again`
@@ -58,19 +60,19 @@ else if (playerSelection === "scissors" && computerSelection === "rock"){
 }
 
 rockButton.addEventListener('click', () => {
-const computerSelection = getComputerChoice();
-const playerSelection = "rock"
+const computerSelection = getComputerChoice()
+const playerSelection = 'rock'
 playRound(playerSelection, computerSelection)
 })
 
 paperButton.addEventListener('click', () => {
-const computerSelection = getComputerChoice();
+const computerSelection = getComputerChoice()
 const playerSelection = "paper"
 playRound(playerSelection, computerSelection)
 })
 
 scissorButton.addEventListener('click', () => {
-const computerSelection = getComputerChoice();
+const computerSelection = getComputerChoice()
 const playerSelection = "scissor" 
 playRound(playerSelection, computerSelection)
 })
