@@ -14,7 +14,7 @@ const computerScoreSpan = document.querySelector('.computerScore')
 
 const getComputerChoice = () => {
 
-const rps = ["rock", "paper", "scissors"]
+const rps = ["rock", "paper", "scissor"]
 const choices = rps[(Math.floor(Math.random() * rps.length))]
 return choices
 }
