@@ -27,7 +27,7 @@ const playRound = (playerSelection, computerSelection) =>{
        p.innerText = `You draw! You both picked ${playerSelection} , play again`
        result.appendChild(p)
     } 
-else if (playerSelection === "rock" && computerSelection === "scissors"){
+else if (playerSelection === "rock" && computerSelection === "scissor"){
     playerScore++
     const p = document.createElement('p')
     p.innerText = "You win! The computer picked Scissors"
@@ -39,7 +39,7 @@ else if (playerSelection === "paper" && computerSelection === "rock"){
     p.innerText = "You win! The computer picked Rock"
     result.appendChild(p)
 }
-else if (playerSelection === "scissors" && computerSelection === "paper"){
+else if (playerSelection === "scissor" && computerSelection === "paper"){
     playerScore++
     const p = document.createElement('p')
     p.innerText = "You win! The computer picked Paper"
@@ -52,13 +52,13 @@ else if (playerSelection === "rock" && computerSelection === "paper"){
     p.innerText = "You lose! The computer picked Paper"
     result.appendChild(p)
 }
-else if (playerSelection === "paper" && computerSelection === "scissors"){
+else if (playerSelection === "paper" && computerSelection === "scissor"){
     computerScore++
     const p = document.createElement('p')
     p.innerText = "You lose! The computer picked Scissors"
     result.appendChild(p)
 }
-else if (playerSelection === "scissors" && computerSelection === "rock"){
+else if (playerSelection === "scissor" && computerSelection === "rock"){
     computerScore++
     const p = document.createElement('p')
     p.innerText =  "You lose! The computer picked Rock"
@@ -104,6 +104,13 @@ playRound(playerSelection, computerSelection)
 score(playerScore, computerScore)
 winner(playerScore, computerScore)
 })
+scissorButton.addEventListener('click', () => {
+const computerSelection = getComputerChoice()
+const playerSelection = "scissor"
+playRound(playerSelection, computerSelection)
+score(playerScore, computerScore)
+winner(playerScore, computerScore)
+})
 
 paperButton.addEventListener('click', () => {
 const computerSelection = getComputerChoice()
@@ -113,13 +120,6 @@ score(playerScore, computerScore)
 winner(playerScore, computerScore)
 })
 
-scissorButton.addEventListener('click', () => {
-const computerSelection = getComputerChoice()
-const playerSelection = "scissor" 
-playRound(playerSelection, computerSelection)
-score(playerScore, computerScore)
-winner(playerScore, computerScore)
-})
 
 
 /*
