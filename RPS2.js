@@ -78,7 +78,7 @@ if (playerScore === 5){
 else if (computerScore === 5){
     const h3 = document.createElement('h3')
     h3.classList.add('PlayerWin')
-    h3.innerText = `HJFHJDH you lose!, you were beaten by the computer by ${computerScore} to ${playerScore}.`
+    h3.innerText = `HJFHJDH you lose! You were beaten by the computer by ${computerScore} to ${playerScore}.`
     result.append(h3)
     playAgain()
 }
